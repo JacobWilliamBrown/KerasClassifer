@@ -11,6 +11,9 @@ def image_data(path):
             labels.append(label_string)
             # next_image.show()
     return (images, labels)
+
+
+# Resizing code.
 ima, lab = image_data("PeopleArt/JPEGImages")
-ima[0].show()
+ima[0].resize((128, 128)).show()
 print(lab[0])
